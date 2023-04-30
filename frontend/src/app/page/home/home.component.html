@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  
+      <ion-title>home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- <div class="content" role="main"> -->
+
+    <!-- <button mat-raised-button>Camara</button>
+  
+    <div class="card-container">
+      <button class="card card-small" (click)="captureImage()">
+        <span>Capture image</span>
+      </button>
+    </div>
+   -->
+   
+   
+   <!-- </div> -->
+   <ion-content>
+      <!-- <img [src]="image" *ngIf="image" [style.width]="'300px'" /> -->
+      <ion-img [src]="image"  *ngIf="image"></ion-img>
+    
+  <ion-button horizontal="center" (click)="predecir()" vertical="bottom" horizontal="center" >Predecir</ion-button>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed" (click)="captureImage()" >
+        <ion-fab-button >
+            <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+  </ion-content>
